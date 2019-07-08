@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { GreetingsComponent} from './greetings/greetings.component';
 import {TestComponent} from './test.component';
-import {ShellComponent} from './shell/shell.component';
+import {ShellComponent} from './shell.component';
 const routes: Routes = [
     {
       path: '', 
@@ -41,7 +41,7 @@ const routes: Routes = [
 ]
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(routes) ],
-  declarations: [ AppComponent, HelloComponent , GreetingsComponent,TestComponent, ShellComponent],
+  declarations: [ ShellComponent, AppComponent, HelloComponent , GreetingsComponent,TestComponent],
   bootstrap:    [ ShellComponent ]
 })
 export class AppModule { }
